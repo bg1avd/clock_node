@@ -2,10 +2,15 @@ var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var moduleTime = require('./moduleTime');
+var expressLayouts = require('express-ejs-layouts');
 
 app.set('views', __dirname + "/views");
 app.set("view engine", "ejs")
-// app.use(express.static(__dirname + '/public'));
+app.use(expressLayouts);
+app.use(require('express').static(__dirname + '/public'));
+app.set('layout', 'time')
+
+
 
 app.get('/', function(request, response){
 	response.send("Hello World")
