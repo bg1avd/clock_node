@@ -11,13 +11,7 @@ app.use(require('express').static(__dirname + '/public'));
 app.set('layout', 'time')
 
 
-
 app.get('/', function(request, response){
-	response.send("Hello World")
-});
-
-app.get('/time', function(request, response){
-	// var time = theTime();
 	response.render("time")
 });
 
