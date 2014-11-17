@@ -1,8 +1,15 @@
 Clock_node
 ==========
+It's a clock created using node.js, express.js and socket.io
 
+<img src='http://i62.tinypic.com/29d6de.png'>
 
-It's a clock created using node, express and socket.io
+Have a look here: https://clock-node.herokuapp.com/
 
-![clock_page](http://s27.postimg.org/68lr7ekf7/Screen_Shot.png)
-
+Technologies:
+---------------
+- Javascript
+- JQuery
+- HTML/CSS
+- Node.js
+- Express.js
