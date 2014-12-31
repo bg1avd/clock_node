@@ -2,7 +2,7 @@
 
 Clock_node
 ==========
-It's a clock created using node.js, express.js and socket.io.
+During week 7 Bernard and I have built a clock to try and understand better how node and sockets work. Later on I decided to  represent the time as a RGB colour value.
 
 <img src='http://i62.tinypic.com/29d6de.png'>
 
@@ -13,7 +13,30 @@ Technologies:
 - HTML/CSS
 - Node.js
 - Express.js
+- Socket.io
 
 On Heroku:
 ----------
 https://clock-node.herokuapp.com/
+
+How to use:
+-----------
+Clone the repo:
+```shell
+$ git clone https://github.com/elenagarrone/clock_node.git
+```
+Change into the directory:
+```shell
+$ cd clock_node
+```
+Supposing you have installed Node.js and npm, type:
+```shell
+$ npm install
+# this will install the packages inside of the package.json file
+```
+and then:
+```shell
+$ npm start
+#then on the browser go to:
+localhost:3000
+```
