@@ -5,9 +5,16 @@ module.exports = {
 		var hour = addZero(time.getHours());
 		var minutes = addZero(time.getMinutes());
 		var seconds = addZero(time.getSeconds());
-
-		return hour+":"+minutes+":"+seconds
+		return "rgb(" + hour + ", " + minutes + ", " + seconds + ")"
 	},
+
+	theColor: function(){
+		var time = new Date
+		var hour = addZero(time.getHours());
+		var minutes = addZero(time.getMinutes());
+		var seconds = addZero(time.getSeconds());
+		return "rgb(" + hour + ", " + minutes + ", " + seconds + ")"
+	}
 };
 
 function addZero(digit){

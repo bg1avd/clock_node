@@ -3,7 +3,7 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <link rel='stylesheet' href='/style.css'/>
 
-<h1></h2>
+<h1></h1>
 
 <script>
 
@@ -11,9 +11,10 @@
 
 	socket.on('updateTime', function(data){
 	$('h1').text(data.updateTime);
-		console.log(data);	
+		console.log(data);
+	$('body').css("background", data.updateTime);
+		console.log(data)
 	});
+
 </script>
 </body>
-
-

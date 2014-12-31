@@ -1,12 +1,8 @@
-body {
-	background: #A6373F
-} 
-
 h1 {
+	color: white;
 	text-align: center;
 	width: 100%;
-	color: #FF7400;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 477%;
-	margin-top: 20%;
+	margin: 20%, 0% 0% 0%;
 }
