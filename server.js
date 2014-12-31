@@ -1,7 +1,7 @@
 var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
-var moduleTime = require('./moduleTime');
+var moduleTime = require('./public/moduleTime');
 var expressLayouts = require('express-ejs-layouts');
 
 app.set('views', __dirname + "/views");
@@ -12,21 +12,21 @@ app.set('layout', 'time')
 
 
 app.get('/', function(request, response){
-	response.render("time")
+  response.render("time")
 });
 
 app.set('port', (process.env.PORT || 3000))
 
 module.exports = http
 if (!module.parent) {
-  console.log('Server running on port 3000')
+  console.log('Server running on port 3000');
   http.listen(app.get('port'), function () {
-    console.log("Node app is running at port:" + app.get('port'))
+    console.log("Node app is running at port:" + app.get('port'));
   });
 };
 
 io.on('connection', function(socket){
-	setInterval(function(){
-	socket.emit('updateTime', { updateTime: moduleTime.theTime() });
-	}, 1000);
+  setInterval(function(){
+    socket.emit('updateTime', { updateTime: moduleTime.theTime() });
+  }, 1000);
 });
