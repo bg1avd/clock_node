@@ -4,7 +4,7 @@ Clock_node
 ==========
 During week 7 Bernard and I have built a clock to try and understand better how node and sockets work. Later on I decided to  represent the time as a RGB colour value.
 
-<img src='http://i62.tinypic.com/29d6de.png'>
+<img src='/public/images/color_screenshot.png'>
 
 Technologies:
 -------------
