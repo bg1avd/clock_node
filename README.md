@@ -2,7 +2,7 @@
 
 Clock_node
 ==========
-During week 7 Bernard and I have built a clock to try and understand better how node and sockets work. Later on I decided to  represent the time as a RGB colour value.
+During week 7 Bernard and I have built a clock to try and understand better how node and sockets work. Later on I decided to  represent the time as a HEX colour value which goes from #000000 to #235959. For this reason the color is always quite dark. 
 
 <img src='/public/images/color_screenshot.png'>
 

@@ -5,7 +5,7 @@ module.exports = {
     var hour = addZero(time.getHours());
     var minutes = addZero(time.getMinutes());
     var seconds = addZero(time.getSeconds());
-    return "rgb(" + hour + ", " + minutes + ", " + seconds + ")"
+    return "#" + hour + minutes + seconds
   }
 
 };
