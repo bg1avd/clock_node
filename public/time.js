@@ -1,4 +1,6 @@
-var socket = io.connect('/');
+var url=window.location.host + '/';
+
+var socket = io.connect(url);
 
 socket.on('updateTime', function(data){
   var obj = eval ('(' + data.updateTime + ')');
