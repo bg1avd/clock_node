@@ -7,8 +7,8 @@ module.exports = {
     var seconds = addZero(time.getSeconds());
     var colorval = "#" + hour + minutes + seconds;
     var timeval = hour +':'+ minutes + ':'+seconds;
-	  var json = JSON.stringify({"color":colorval,"time":timeval});
-	  return json
+    var json = JSON.stringify({"color":colorval,"time":timeval});
+    return json
   }
 
 };
